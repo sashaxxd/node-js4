@@ -35,7 +35,7 @@ Cкачиваем монгодб https://www.mongodb.com/download-center#product
 
  npm i body-parser --save - Боди парсер
 
- компилятор jsx:    app\node_modules\.bin\babel test.jsx -o test\test.js -w
+ компилятор jsx:    app\node_modules\.bin\babel public\test.jsx -o public\test\test.js -w
 
 
 

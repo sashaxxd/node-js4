@@ -20,7 +20,7 @@ class MenWomen extends React.Component{
         this.setState({showHit: false});
         this.setState({ selectedOption: e.target.value });
         alert(e.target.value);
-        if(e.target.value === 'menw'){
+        if(e.target.value === 'men'){
             this.setState({showWomen: false});
             this.setState({showMen: true});
             this.setState({showContent: true});
