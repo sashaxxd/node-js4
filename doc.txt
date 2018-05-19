@@ -1,0 +1,45 @@
+npm init - при создании package.json
+npm uninstall http-server -g - удаляем пакеты глобально установленные
+npm install express --save (save что бы добавить в джейсон пакет)
+
+Установка бабель глобально старый:
+npm install babel@5 -g (переводить es6 в es5 - т.к. не все браузеры понимают еs6) - старый способ
+
+новый способ:
+1 npm install --save-dev babel-core babel-cli babel-preset-env babel-preset-stage-0
+npm install babel-preset-es2015 --save-dev - еще пресет
+npm i babel-preset-react@6.5.0 --save-dev
+2 Создаем файл .babelrc
+3 Вставляем в него нужные пресеты для бабеля
+{
+  "presets": ["env", "stage-0", "es2015"]
+}
+4 если в .babelrc
+        {
+           "presets": ["env", "stage-0", "es2015", "react"]
+         }
+         реакт транспайлится хуй пойми как в формат походу es2015 - cрабатывает другой пресет
+         Полезные ссылки:
+         https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit
+         http://qaru.site/questions/211625/how-do-i-setup-babel-6-with-node-js-to-use-es6-in-my-server-side-code
+
+babel-node server/app.js - запуск сервера
+npm run babel-node server/app.js - запуск сервера новая версия
+
+
+Cкачиваем монгодб https://www.mongodb.com/download-center#production
+
+Установка Mongoose: npm i mongoose --save
+
+ Переход на другой диск в командной виндовс cd /d d:\ переходим в папку с базой  cd mongodb запускаем ее mongod
+
+ npm i body-parser --save - Боди парсер
+
+ компилятор jsx:    app\node_modules\.bin\babel test.jsx -o test\test.js -w
+
+
+
+
+
+
+
