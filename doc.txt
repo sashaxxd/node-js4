@@ -24,7 +24,7 @@ npm i babel-preset-react@6.5.0 --save-dev
          http://qaru.site/questions/211625/how-do-i-setup-babel-6-with-node-js-to-use-es6-in-my-server-side-code
 
 babel-node server/app.js - запуск сервера
-npm run babel-node server/app.js - запуск сервера новая версия
+npm run babel-node server/app.js - запуск сервера новая версия - можно прописать в package.json
 
 
 Cкачиваем монгодб https://www.mongodb.com/download-center#production
