@@ -2,6 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader'
 
 import  Hit from './Hit.jsx';
+import Editor from  './Editor.jsx';
 import  Sex from './Sex.jsx';
 import Footer from  './Footer.jsx';
 
@@ -37,10 +38,11 @@ class MenWomen extends React.Component{
             this.setState({showWomen: true});
             this.setState({showContent: true});
         }
+    }
 
 
-
-
+    handleNoteAdd(data){
+        console.log(data);
     }
 
 
@@ -78,9 +80,17 @@ class MenWomen extends React.Component{
                         </div>
                     </div>
                 </div>
+                <Editor
+
+                    onNoteAdd= {this.handleNoteAdd}
+                />
+
+
                 <Hit
                     hidden = {this.state.showHit}
                 />
+
+
 
                 <Sex
                     men = {this.state.showMen}

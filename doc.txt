@@ -1,3 +1,5 @@
+Урок react + node + express + mongodb
+
 npm init - при создании package.json
 npm uninstall http-server -g - удаляем пакеты глобально установленные
 npm install express --save (save что бы добавить в джейсон пакет)
