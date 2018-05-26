@@ -6,6 +6,18 @@ import Editor from  './Editor.jsx';
 import  Sex from './Sex.jsx';
 import Footer from  './Footer.jsx';
 
+import NotesStore from '../stores/NotesStore';
+import NotesActions from '../actions/NotesActions';
+
+
+// function getStateFromFlux() {
+//     return {
+//         isLoading: NotesStore.isLoading(),
+//         notes: NotesStore.getNotes()
+//     };
+// }
+
+
 class MenWomen extends React.Component{
     constructor(props){
         super(props);
@@ -16,12 +28,28 @@ class MenWomen extends React.Component{
             showWomen: false,
             showContent: false,
             showHit: true,
-            selectedOption: ''
+            selectedOption: '',
+            // item: getStateFromFlux()
         }
 
 
 
     }
+
+
+
+    // componentDidMount() {
+    //     NotesStore.addChangeListener(this._onChange);
+    // }
+    //
+    // componentWillUnmount() {
+    //     NotesStore.removeChangeListener(this._onChange);
+    // }
+    //
+    // _onChange() {
+    //     this.setState(getStateFromFlux());
+    // }
+
 
 
     Gender2(e) {
@@ -42,7 +70,8 @@ class MenWomen extends React.Component{
 
 
     handleNoteAdd2(newNote){
-        console.log(newNote);
+        //
+        NotesActions.createNote(newNote);
     }
 
 
