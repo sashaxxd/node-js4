@@ -41,8 +41,8 @@ class MenWomen extends React.Component{
     }
 
 
-    handleNoteAdd(data){
-        console.log(data);
+    handleNoteAdd2(newNote){
+        console.log(newNote);
     }
 
 
@@ -81,8 +81,9 @@ class MenWomen extends React.Component{
                     </div>
                 </div>
                 <Editor
-
-                    onNoteAdd= {this.handleNoteAdd}
+                    /*Cюда передаем свойство которое в компоненте Editor привязанно к props это функция handleNoteAdd
+                     cвойство можно привязать как методу так и к css*/
+                    onNoteAdd= {this.handleNoteAdd2}
                 />
 
 

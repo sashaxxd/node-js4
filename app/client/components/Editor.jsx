@@ -36,8 +36,13 @@ class Editor extends React.Component{
         };
 
         this.props.onNoteAdd(newNote);
-        this.setState({ text: '', title: '', color: '#FFFFFF' });
+        // this.setState({ text: '', title: '', color: '#FFFFFF' });
     }
+
+
+
+
+
 
 
     render(){
@@ -62,7 +67,7 @@ class Editor extends React.Component{
                                                           onChange={this.handleTextChange}
                                                  placeholder="&#1044;&#1086;&#1073;&#1072;&#1074;&#1080;&#1090;&#1100; &#1090;&#1077;&#1082;&#1089;&#1090;" />
                                                 <input type="submit" onClick={this.handleNoteAdd}
-                                                       disabled={!this.state.text}
+                                                        disabled ={!this.state.text}
                                                        id="Button1" name="button" value="Добавить" />
                                         </div>
                                     </div>
